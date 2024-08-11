@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+    }
+
+
+
+
+#barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Beau Rivage", cursive;
+    color: whitesmoke;
+    background-color: #000000;
+    list-style-type: none;
+
+
+}
+
+.botones:hover {
+    color: rgb(107, 255, 8);
+    cursor: pointer;
+
+}
+
+#div2 {
+    background-image: url(imágenes/imagenfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.beauRivage {
+    font-family: "Beau Rivage", cursive;
+
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: lighter;
+    text-shadow: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: whitesmoke;
+}
+
+.divGaleria {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap;
+    background-color: black;
+    height: 300px;
+    border-style: groove;
+    border-color: blueviolet;
+    border-style: double;
+    border-width: 10px;
+    box-sizing: border-box;
+
+}
+
+.divGaleria img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
