@@ -1,61 +1,77 @@
 <!DOCTYPE html>
- <html lang="es">
-    <head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunoichi Ink</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Mulish:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-     <title>Kunoichi Ink</title> 
-     <meta charset="UTF-8">
-     <meta name="author" content="Florencia Giménez">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="style.css" rel="stylesheet"></a>
-     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
-     
-
-    </head>
-
-    <body>
-     <div id="div1">
-      <ul id="barra" class="beauRivage">
-         <li class="botones">¡Me quiero tatuar!</li>
-         <li class="botones">¡Quiero un piercing!</li>
-         <li class="botones">Contacto</li>
-      </ul>  
-      
-     </div>
-     <hr>
-     <div id="div2">
-      <h1 class="beauRivage">Kunoichi Ink</h1>
-      
-     </div>
-
-   <div id="div3" class="divGaleria">
-      
-             <img src="imágenes/tatuaje1.jfif" alt="tatuaje">
-             <img src="imágenes/tatuaje2.jfif" alt="tatuaje">
-             <img src="imágenes/tatuaje3.jfif" alt="tatuaje">
-             <img src="imágenes/tatuaje4.jfif" alt="tatuaje">
-             <img src="imágenes/tatuaje5.jfif" alt="tatuaje">
-             <img src="imágenes/tatuaje6.jfif" alt="tatuaje">
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Kunoichi Ink</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">¡Me quiero tatuar!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">¡Quiero un piercing!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <hr>
+  <!-- Encabezado -->
+  <header class="text-center my-5">
+    <h1 class="display-1 text-light beauRivage">Kunoichi Ink</h1>
+  </header>
 
-    <div id="div4" class="divGaleria">
+  <!-- Galería de Tatuajes y Piercings -->
+  <main class="container mb-5">
+    <!-- Galería de Tatuajes -->
+    <section id="tatuajes" class="my-4">
+      <h2 class="text-center beauRivage">Galería de Tatuajes</h2>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-primary mr-2" id="prev-tatuajes">←</button>
+        <div class="d-flex flex-nowrap overflow-hidden" id="galeria-tatuajes"></div>
+        <button class="btn btn-primary ml-2" id="next-tatuajes">→</button>
+      </div>
+    </section>
 
-            <img src="imágenes/piercing1.jfif" alt="piercing">
-            <img src="imágenes/piercing2.jfif" alt="piercing">
-            <img src="imágenes/piercing3.jfif" alt="piercing">
-            <img src="imágenes/piercing4.jfif" alt="piercing">
-            <img src="imágenes/piercing5.jfif" alt="piercing">
-            <img src="imágenes/piercing6.jfif" alt="piercing">
-            <img src="imágenes/piercing7.jfif" alt="piercing">
-      
-    </div>
-     
-     
-    
-     
-    </body>
-    <footer></footer>
- </html>
+    <!-- Galería de Piercings -->
+    <section id="piercings" class="my-4">
+      <h2 class="text-center beauRivage">Galería de Piercings</h2>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-primary mr-2" id="prev-piercings">←</button>
+        <div class="d-flex flex-nowrap overflow-hidden" id="galeria-piercings"></div>
+        <button class="btn btn-primary ml-2" id="next-piercings">→</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="text-center py-3 bg-light">
+    <p>© 2024 Kunoichi Ink</p>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script Personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
